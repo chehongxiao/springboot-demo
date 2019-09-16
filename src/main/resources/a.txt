@@ -1,0 +1,18 @@
+
+
+http://localhost:8080/index
+http://localhost:8080/index.html
+http://localhost:8080/user/getUserInfo
+
+http://localhost:8080/swagger-ui.html
+
+pom.xml文件所在目录执行：mvn mybatis-generator:generate
+
+org.codehaus.plexus.archiver.jar.Manifest.write(java.io.PrintWriter)
+
+解决方法为：更新eclipse中的maven插件
+
+1.help ->  Install New Software -> add ->
+mavenarchiver
+http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.2/N/LATEST/
+2.一直next confirm 安装更新 提示重启eclipse 然后再右键项目maven update project
