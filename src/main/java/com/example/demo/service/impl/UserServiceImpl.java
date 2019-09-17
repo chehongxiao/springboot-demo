@@ -11,6 +11,11 @@ import com.example.demo.dao.UserMapper;
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
 
+import javax.jws.WebService;
+
+@WebService(serviceName = "UserService",//对外发布的服务名
+        targetNamespace = "http://service.demo.example.com",//指定你想要的名称空间，通常使用使用包名反转
+        endpointInterface = "com.example.demo.service.UserService")//服务接口全路径, 指定做SEI（Service EndPoint Interface）服务端点接口
 @Service
 public class UserServiceImpl extends BaseService<User> implements UserService {
 

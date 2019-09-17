@@ -46,7 +46,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-spring-boot-starter-jaxws</artifactId>
+			<version>3.2.4</version>
+		</dependency>
+
 		<!--mybaits在spring-boot中的依赖-->
 		<dependency>
 		    <groupId>org.mybatis.spring.boot</groupId>
