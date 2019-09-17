@@ -11,6 +11,7 @@ import com.example.demo.dao.UserMapper;
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
 
+import javax.annotation.Resource;
 import javax.jws.WebService;
 
 @WebService(serviceName = "UserService",//对外发布的服务名
@@ -19,7 +20,7 @@ import javax.jws.WebService;
 @Service
 public class UserServiceImpl extends BaseService<User> implements UserService {
 
-    @Autowired  
+    @Resource
     private UserMapper userMapper;
     
     public List<User> getUserInfo() {
